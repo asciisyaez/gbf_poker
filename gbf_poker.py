@@ -38,7 +38,7 @@ def get_higher(card_index):
 plays = 10
 
 while plays > 0:
-	found_card = raw_input("Card: ")
+	found_card = input("Card: ")
 
 	if str(found_card).lower() in card:
 		card_index = card[str(found_card).lower()]
@@ -47,5 +47,5 @@ while plays > 0:
 
 	cards[card_index] -= 1
 	cards_left -= 1
-	print "Higher: %.2f, Lower: %.2f" % (get_higher(card_index), get_lower(card_index))
+	print("Higher: %.2f, Lower: %.2f" % (get_higher(card_index), get_lower(card_index)))
 	plays -= 1
